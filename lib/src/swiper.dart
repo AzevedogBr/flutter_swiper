@@ -865,7 +865,7 @@ class _StackViewState extends _CustomLayoutStateBase<_StackSwiper> {
       offsets = [-space, -space / 3 * 2, -space / 3, 0.0, _swiperWidth];
     } else {
       double space = (_swiperHeight - widget.itemHeight) / 2;
-      offsets = [-space, -space / 3 * 2, -space / 3, 0.0, _swiperHeight];
+      offsets = [space, space / 3 * 2, space / 3, 0.0, _swiperHeight];
     }
   }
 
@@ -902,7 +902,7 @@ class _StackViewState extends _CustomLayoutStateBase<_StackSwiper> {
 
     Alignment alignment = widget.scrollDirection == Axis.horizontal
         ? Alignment.centerLeft
-        : Alignment.topCenter;
+        : Alignment.bottomCenter;
 
     return new Opacity(
       opacity: o,
