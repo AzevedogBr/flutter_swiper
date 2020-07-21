@@ -635,13 +635,13 @@ class _SwiperState extends _SwiperTimerMixin {
     }
 
     list.add(new Align(
-      alignment: Alignment.center,
+      alignment: Alignment.topCenter,
       child: pagination.build(context, config),
     ));
 
     return new Column(
       children: list,
-      crossAxisAlignment: CrossAxisAlignment.stretch,
+      crossAxisAlignment: CrossAxisAlignment.start,
       mainAxisSize: MainAxisSize.min,
     );
   }
