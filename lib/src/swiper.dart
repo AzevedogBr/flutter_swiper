@@ -826,7 +826,7 @@ class _TinderState extends _CustomLayoutStateBase<_TinderSwiper> {
 
     Alignment alignment = widget.scrollDirection == Axis.horizontal
         ? Alignment.bottomCenter
-        : Alignment.centerLeft;
+        : Alignment.topCenter;
 
     return new Opacity(
       opacity: o,
@@ -902,7 +902,7 @@ class _StackViewState extends _CustomLayoutStateBase<_StackSwiper> {
 
     Alignment alignment = widget.scrollDirection == Axis.horizontal
         ? Alignment.centerLeft
-        : Alignment.bottomCenter;
+        : Alignment.topCenter;
 
     return new Opacity(
       opacity: o,
