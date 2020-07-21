@@ -641,7 +641,7 @@ class _SwiperState extends _SwiperTimerMixin {
 
     return new Column(
       children: list,
-      crossAxisAlignment: CrossAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       mainAxisSize: MainAxisSize.min,
     );
   }
@@ -826,7 +826,7 @@ class _TinderState extends _CustomLayoutStateBase<_TinderSwiper> {
 
     Alignment alignment = widget.scrollDirection == Axis.horizontal
         ? Alignment.bottomCenter
-        : Alignment.topCenter;
+        : Alignment.centerLeft;
 
     return new Opacity(
       opacity: o,
@@ -902,7 +902,7 @@ class _StackViewState extends _CustomLayoutStateBase<_StackSwiper> {
 
     Alignment alignment = widget.scrollDirection == Axis.horizontal
         ? Alignment.centerLeft
-        : Alignment.topCenter;
+        : Alignment.bottomCenter;
 
     return new Opacity(
       opacity: o,
