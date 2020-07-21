@@ -77,6 +77,7 @@ class SwiperControl extends SwiperPlugin {
     if (config.scrollDirection == Axis.horizontal) {
       child = Row(
         key: key,
+        crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           buildButton(config, prevColor, iconPrevious, 0, true),
